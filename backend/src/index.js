@@ -25,7 +25,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/message', messageRoutes);
 app.use('/api/chat-requests', chatRequestRoutes);
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3001;
 
 server.listen(port, () => {
     console.log("Server is running on port: "+port);
